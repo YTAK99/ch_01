@@ -1,5 +1,7 @@
 from pathlib import Path        # pathlib 패키지의 Path 클래스를 불러옴
-WORK_DIR = Path(__file__).parent        # 변수 WORK_DIR에 소스 코드의 절대 경로를 저장. Path(__file__)은 파일의 경로를 Path 객체로 생성하며, parent 속성은 현재 경로의 상위 디렉터리를 불러옴
+WORK_DIR = Path(__file__).parent        # 변수 WORK_DIR에 소스 코드의 절대 경로를 저장. Path(__file__)은 파일의 경로를 Path 객체로 생성하며, 
+                                        #   parent 속성은 현재 경로의 상위 디렉터리를 불러옴
+
 OUT_DIR = WORK_DIR / 'OUTPUT'           # 소스 코드의 절대 경로에 'output'을 붙여 변수 OUT_DIR에 저장
 
 if __name__ == "__main__":              # 소스 코드를 최초로 실행하는 경우 if문 이하의 코드를 수행
