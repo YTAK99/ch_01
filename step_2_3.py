@@ -21,3 +21,7 @@ def load_dirnames() -> list[str]:                                   # 폴더 목
 
 if __name__ == "__main__":
     dump_dirnames(Path.home())                                      # 함수 dump_dirnames()를 실행. 이때 함수 home()을 사용해 홈 디렉터리의 경로를 입력값으로 전달
+
+
+
+#dir /ah 숨겨진 폴더 확인
