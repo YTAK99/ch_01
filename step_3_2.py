@@ -6,5 +6,5 @@ from step_3_1 import load_plot_data
 plot_data = load_plot_data()
 fig, ax = plt.subplots()                                        # plt 모듈의 함수 subplots() 를 호출하여 객체 Figure와 Axes를 생성하고 각각 변수 fig, ax에 저장.
                                                                 # Figure는 차트의 배경을, Axes는 차트를 실제로 생성하고, 제목, 축 제목, 테두리 등 세부 설정을 처리
-ax.barh(plot_data["stem"], plot_data["size"])                   # 함수 barh()를 호출하여 바 차트를 그린다. 첫 번째 입력값으로 세로축에 사용할 폴더 이름을, 두 번째 입력값으로 가로축에 사용할 폴더 크기를 전달.
+ax.barh(plot_data["stem"], plot_data["size"], color=['red', 'blue'])         # 함수 barh()를 호출하여 바 차트를 그린다. 첫 번째 입력값으로 세로축에 사용할 폴더 이름을, 두 번째 입력값으로 가로축에 사용할 폴더 크기를 전달.
 fig.savefig(OUT_DIR / f"{Path(__file__).stem}.png")             # 함수 savefig()를 호출하여 fig에 저장된 차트를 png 파일로 저장.
