@@ -1,7 +1,7 @@
 from pathlib import Path
 import matplotlib.pyplot as plt                                     # 수치 연산을 위해 numpy 패키지를 불러옴. matplotlob을 설치하면 자동으로 설치됨.
 import numpy as np
-from step_2_1 import OUT_DIR
+from step_2_1 import OUT_DIR                                        # 이전에 작성한 모듈을 불러옴.
 from step_3_1 import load_plot_data
 
 plot_data = load_plot_data()
